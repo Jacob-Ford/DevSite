@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacob Ford</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="webpage.css" />
+</head>
+<main>
+
+  <body class="tan">
+    <nav >
+      <ul class="nav-list">
+        <li class="list-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="list-item"><a class="nav-link" href=#About>About</a></li>
+        <li class="list-item"><a class="nav-link" href=#Projects>Projects</a></li>
+        <li class="list-item"><a class="nav-link" href=#Contact>Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="About">
+        <h3>About</h3>
+        <p>
+            Jacob Ford is a consultant focusing on business intelligence and data management. With 5 years of consulting experience and 10 years manufacturing and distribution knowledge, Jacob has helped multiple companies tackle the transition to the direct-to-consumer business model and adapt to the supply line issues the current market faces. Data driven process improvement is the key to his approach, with clear goals and metrics dictating the path forward.  
+
+</br>Specializations: Software Implementations and Integrations, Business Intelligence Reporting, Database Administration, Processes and Systems Development, Manufacturing and Warehousing Optimization
+
+</br>Education: BS, Computer Science, Portland State University
+        </p>
+    </section>
+    
+    <section id="Projects">
+        <h3>Projects</h3>
+        <div>
+            <h4>Elevator Pitch</h4>
+            <p>
+                The Elevator Pitch app was designed for use by a pacific northwest sportswear company to give its employees a tool to help them tackle the vast amount of information on their products and IPs, allowing them to communicate about them accurately and keep accidental information leaks at a minimum. This app broke down the company’s information into 30 second, 2 minute, and 15 minute formats, so all employees from entry level stocking employees to executives could see information in a way that is relevant to them. This app was developed for android phones using C++ with the android SDK. Due to relatively simple nature of the app and the demanding data security requirements, the face of the app was made without any external libraries and connected to the client database with a secured REST API. During development and testing, a cloud hosted MySQL database was set up using cleaned data provided by the company. Upon release, the REST API was connected to their self-hosted and maintained database.
+            </p>
+        </div>
+        <div>
+            <h4>Virtual Trade Show</h4>
+            <p>
+                This project was a shift in how annual trade shows were handled in the art materials market. The goal was to provide a platform that allowed store owners the ability to attend a trade show at their convenience with prerecorded demonstations, scheduled chat times, and the ability to place multiple orders to ship out at the end of the tradeshow. This project was built using html and css and used substanstial javascript to give users an interactive experience with booth tracking and order rewards. This site used an ASP.NET api to allow the page to interface with the client's ERP system to allow web orders to enter their order management system and pull inventory and item information for the order forms.
+            </p>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <form class="container bg-light mx-auto col-md-6">
+            <h3>Contact</h3>
+            <div class="row">
+              <div class="col-12 col-md-5">
+                <label for="name">Name:</label>
+              </div>
+              <div class="col-12 col-md-7">
+                <input type="text" class="form-control" id="name" placeholder="Enter Name.">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-5">
+                <label for="email">Email:</label>
+              </div>
+              <div class="col-12 col-md-7">
+                <input type="email" class="form-control" id="email" placeholder="Enter Email.">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-5">
+                <label for="message">Message:</label>
+              </div>
+              <div class="col-12 col-md-7">
+                <textarea class="form-control" rows="6" id="message" placeholder="Enter text here."></textarea>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-6">
+                <input type="submit" class="btn btn-primary form-control" id="submit" >
+              </div>
+              <div class="col-6">
+                <input type="reset" class="btn btn-secondary form-control" id="reset" >
+              </div>
+            </div>
+          </form>
+    </section>
+  </body>
+</main>
+
+</html>
